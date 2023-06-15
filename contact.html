@@ -44,9 +44,18 @@
 							<div class="inner">
 
 								<section>
-									<h3>Email: <a href='mailto:tkapoor@purdue.edu'>tkapoor@purdue.edu</a></h3>
-									<h3>Phone: (765) 772-6807</h3>
+									
+					
+									<button class="button fit primary" onclick="myFunction()">Click for Contact Information</button>
 									<br>
+									<div id="ContactInfoDisplay" style="display: none">
+										<br>
+										<h3>Email: <a href='mailto:tkapoor@purdue.edu'>tkapoor@purdue.edu</a></h3>
+										<h3>Phone: +1(765)772-6807</h3>
+									</div>
+								
+
+									
 									<br>
 									<h4>Contact Form</h4>
 									<form method="post" action="index.php">
@@ -104,6 +113,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			function myFunction() {
+			  var x = document.getElementById("ContactInfoDisplay");
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+			  } else {
+				x.style.display = "none";
+			  }
+			}
+			</script>
 
 	</body>
 </html>
